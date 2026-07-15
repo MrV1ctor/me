@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience — Victor Urumov</title>
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var theme = stored || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <nav class="explorer">
+    <div class="explorer__user">
+      <div class="explorer__avatar">VU</div>
+      <span>Victor Urumov</span>
+    </div>
+    <div class="explorer__root">portfolio/</div>
+
+    <button class="explorer__toggle" aria-expanded="false" aria-controls="tree">Menu</button>
+
+    <ul class="tree" id="tree">
+      <li><a href="index.html"><span class="dot dot--home"></span>home.tsx</a></li>
+      <li><a href="projects.html"><span class="dot dot--projects"></span>projects/</a></li>
+      <li><a href="experience.html" class="is-active"><span class="dot dot--exp"></span>experience.md</a></li>
+      <li><a href="interests.html"><span class="dot dot--interests"></span>interests.yml</a></li>
+      <li><a href="contact.html"><span class="dot dot--contact"></span>contact.sh</a></li>
+    </ul>
+
+    <div class="explorer__foot">last commit: Jul 2026</div>
+  </nav>
+
+  <main class="page">
+
+    <div class="tabbar">
+      <div class="tabbar__dots"><span></span><span></span><span></span></div>
+      <div class="tabbar__file">experience.md</div>
+      <button class="theme-toggle" id="themeToggle" aria-pressed="false">
+        <span class="kw">let</span>&nbsp;darkMode&nbsp;<span class="punc">=</span>&nbsp;<span id="themeToggleValue" class="kw">false</span><span class="punc">;</span>
+      </button>
+      <div class="tabbar__path">~/portfolio/experience.md</div>
+    </div>
+
+    <div class="leaf leaf--wide">
+
+      <div class="page-head">
+        <span class="comment">education &amp; work history</span>
+        <h1>Experience</h1>
+        <!-- This page is for résumé content: internships, jobs, coursework, volunteering, awards, certifications -->
+        <p style="max-width:60ch;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="section-block">
+        <h2>Work &amp; internships</h2>
+        <div class="timeline">
+
+          <div class="tl-entry">
+            <div class="tl-entry__date">Month 20XX — Month 20XX</div>
+            <h3 class="tl-entry__role">Role Title</h3>
+            <div class="tl-entry__org">Company Name — Location</div>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna.</li>
+              <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
+            </ul>
+          </div>
+
+          <div class="tl-entry">
+            <div class="tl-entry__date">Month 20XX — Month 20XX</div>
+            <h3 class="tl-entry__role">Role Title</h3>
+            <div class="tl-entry__org">Company Name — Location</div>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            </ul>
+          </div>
+
+          <div class="tl-entry">
+            <div class="tl-entry__date">Month 20XX — Month 20XX</div>
+            <h3 class="tl-entry__role">Role Title</h3>
+            <div class="tl-entry__org">Company Name — Location</div>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Excepteur sint occaecat cupidatat non proident.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="section-block">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="tl-entry">
+            <div class="tl-entry__date">20XX — 20XX (Expected)</div>
+            <h3 class="tl-entry__role">B.A., Computer Science</h3>
+            <div class="tl-entry__org">University Name — GPA X.XX</div>
+            <p style="margin-top:8px;">Relevant coursework: Data Structures &amp; Algorithms, Operating Systems, Databases, Computer Networks, Software Engineering, Machine Learning.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <h2>Volunteer work</h2>
+        <div class="card-row">
+          <div class="mini-card">
+            <div class="mini-card__top">20XX — Present · Weekly</div>
+            <h4>Organization Name</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card__top">20XX · Seasonal</div>
+            <h4>Organization Name</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <h2>Awards &amp; certifications</h2>
+        <div class="card-row">
+          <div class="mini-card">
+            <div class="mini-card__top">20XX</div>
+            <h4>Award / Honor Name</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card__top">20XX</div>
+            <h4>Certification Name</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block" style="margin-bottom:0;">
+        <h2>Currently learning</h2>
+        <ul class="taglist">
+          <li>Skill / Tool</li>
+          <li>Skill / Tool</li>
+          <li>Skill / Tool</li>
+          <li>Skill / Tool</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <footer class="leaf leaf--wide" style="padding-top:0;">
+      <div class="site-foot">
+        <span>© 2026 Victor Urumov</span>
+        <span>Built with HTML, CSS, &amp; JS</span>
+      </div>
+    </footer>
+  </main>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

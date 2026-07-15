@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interests — Victor Urumov</title>
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var theme = stored || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <nav class="explorer">
+    <div class="explorer__user">
+      <div class="explorer__avatar">VU</div>
+      <span>Victor Urumov</span>
+    </div>
+    <div class="explorer__root">portfolio/</div>
+
+    <button class="explorer__toggle" aria-expanded="false" aria-controls="tree">Menu</button>
+
+    <ul class="tree" id="tree">
+      <li><a href="index.html"><span class="dot dot--home"></span>home.tsx</a></li>
+      <li><a href="projects.html"><span class="dot dot--projects"></span>projects/</a></li>
+      <li><a href="experience.html"><span class="dot dot--exp"></span>experience.md</a></li>
+      <li><a href="interests.html" class="is-active"><span class="dot dot--interests"></span>interests.yml</a></li>
+      <li><a href="contact.html"><span class="dot dot--contact"></span>contact.sh</a></li>
+    </ul>
+
+    <div class="explorer__foot">last commit: Jul 2026</div>
+  </nav>
+
+  <main class="page">
+
+    <div class="tabbar">
+      <div class="tabbar__dots"><span></span><span></span><span></span></div>
+      <div class="tabbar__file">interests.yml</div>
+      <button class="theme-toggle" id="themeToggle" aria-pressed="false">
+        <span class="kw">let</span>&nbsp;darkMode&nbsp;<span class="punc">=</span>&nbsp;<span id="themeToggleValue" class="kw">false</span><span class="punc">;</span>
+      </button>
+      <div class="tabbar__path">~/portfolio/interests.yml</div>
+    </div>
+
+    <div class="leaf leaf--wide">
+
+      <div class="page-head">
+        <span class="comment">off the clock</span>
+        <h1>Interests</h1>
+        <!-- This page is for the parts of you a résumé doesn't show: hobbies, clubs, things you're into outside coursework -->
+        <p style="max-width:60ch;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="interest-grid">
+        <div class="interest-card">
+          <span class="comment">category</span>
+          <h4>Interest / Hobby Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <div class="interest-card">
+          <span class="comment">category</span>
+          <h4>Club / Organization Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <div class="interest-card">
+          <span class="comment">category</span>
+          <h4>Interest / Hobby Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <div class="interest-card">
+          <span class="comment">category</span>
+          <h4>Interest / Hobby Name</h4>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+        </div>
+        <div class="interest-card">
+          <span class="comment">category</span>
+          <h4>Interest / Hobby Name</h4>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+        </div>
+        <div class="interest-card">
+          <span class="comment">category</span>
+          <h4>Interest / Hobby Name</h4>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
+        </div>
+      </div>
+
+      <!-- A personal note, favorite quote, or line about how you approach problems -->
+      <p class="pull-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="section-block" style="margin-bottom:0;">
+        <h2>Organizations</h2>
+        <ul class="taglist">
+          <li>Organization Name</li>
+          <li>Organization Name</li>
+          <li>Organization Name</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <footer class="leaf leaf--wide" style="padding-top:0;">
+      <div class="site-foot">
+        <span>© 2026 Victor Urumov</span>
+        <span>Built with HTML, CSS, &amp; JS</span>
+      </div>
+    </footer>
+  </main>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

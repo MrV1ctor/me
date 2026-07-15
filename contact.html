@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Victor Urumov</title>
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var theme = stored || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <nav class="explorer">
+    <div class="explorer__user">
+      <div class="explorer__avatar">VU</div>
+      <span>Victor Urumov</span>
+    </div>
+    <div class="explorer__root">portfolio/</div>
+
+    <button class="explorer__toggle" aria-expanded="false" aria-controls="tree">Menu</button>
+
+    <ul class="tree" id="tree">
+      <li><a href="index.html"><span class="dot dot--home"></span>home.tsx</a></li>
+      <li><a href="projects.html"><span class="dot dot--projects"></span>projects/</a></li>
+      <li><a href="experience.html"><span class="dot dot--exp"></span>experience.md</a></li>
+      <li><a href="interests.html"><span class="dot dot--interests"></span>interests.yml</a></li>
+      <li><a href="contact.html" class="is-active"><span class="dot dot--contact"></span>contact.sh</a></li>
+    </ul>
+
+    <div class="explorer__foot">last commit: Jul 2026</div>
+  </nav>
+
+  <main class="page">
+
+    <div class="tabbar">
+      <div class="tabbar__dots"><span></span><span></span><span></span></div>
+      <div class="tabbar__file">contact.sh</div>
+      <button class="theme-toggle" id="themeToggle" aria-pressed="false">
+        <span class="kw">let</span>&nbsp;darkMode&nbsp;<span class="punc">=</span>&nbsp;<span id="themeToggleValue" class="kw">false</span><span class="punc">;</span>
+      </button>
+      <div class="tabbar__path">~/portfolio/contact.sh</div>
+    </div>
+
+    <div class="leaf">
+
+      <div class="page-head">
+        <span class="comment">get in touch</span>
+        <h1>Contact</h1>
+        <!-- Swap the links and email below for your own -->
+        <p style="max-width:60ch;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div>
+          <h3 style="margin-bottom:14px; font-size:1rem;">Find me at</h3>
+          <ul class="social-list">
+            <li>
+              <a href="mailto:john.doe@example.com">
+                <span>Email</span>
+                <span class="handle">john.doe@example.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener">
+                <span>LinkedIn</span>
+                <span class="handle">/in/johndoe</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/johndoe" target="_blank" rel="noopener">
+                <span>GitHub</span>
+                <span class="handle">@johndoe</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/johndoe" target="_blank" rel="noopener">
+                <span>X / Twitter</span>
+                <span class="handle">@johndoe</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div>
+          <h3 style="margin-bottom:14px; font-size:1rem;">Send a message</h3>
+          <form action="#" method="post">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name">
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="What's on your mind?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--solid" style="border:none; cursor:pointer;">Send message</button>
+            <p class="form-note">// this form is static — connect it to a service like Formspree, or your own backend, to make it functional.</p>
+          </form>
+        </div> -->
+
+      </div>
+
+    </div>
+
+    <footer class="leaf" style="padding-top:0;">
+      <div class="site-foot">
+        <span>© 2026 Victor Urumov</span>
+        <span>Built with HTML, CSS, &amp; JS</span>
+      </div>
+    </footer>
+  </main>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

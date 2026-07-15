@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victor Urumov — Portfolio</title>
+<meta name="description" content="Portfolio of Victor Urumov, Computer Science student.">
+<script>
+  // set theme before first paint to avoid a light/dark flash
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var theme = stored || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) { /* localStorage unavailable — falls back to light theme */ }
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    Hello World!
+
+<div class="shell">
+
+  <nav class="explorer">
+    <div class="explorer__user">
+      <div class="explorer__avatar">VU</div>
+      <span>Victor Urumov</span>
+    </div>
+    <div class="explorer__root">portfolio/</div>
+
+    <button class="explorer__toggle" aria-expanded="false" aria-controls="tree">Menu</button>
+
+    <ul class="tree" id="tree">
+      <li><a href="index.html" class="is-active"><span class="dot dot--home"></span>home.tsx</a></li>
+      <li><a href="projects.html"><span class="dot dot--projects"></span>projects/</a></li>
+      <li><a href="experience.html"><span class="dot dot--exp"></span>experience.md</a></li>
+      <li><a href="interests.html"><span class="dot dot--interests"></span>interests.yml</a></li>
+      <li><a href="contact.html"><span class="dot dot--contact"></span>contact.sh</a></li>
+    </ul>
+
+    <div class="explorer__foot">last commit: Jul 2026</div>
+  </nav>
+
+  <main class="page">
+
+    <div class="tabbar">
+      <div class="tabbar__dots"><span></span><span></span><span></span></div>
+      <div class="tabbar__file">home.tsx</div>
+      <button class="theme-toggle" id="themeToggle" aria-pressed="false">
+        <span class="kw">let</span>&nbsp;darkMode&nbsp;<span class="punc">=</span>&nbsp;<span id="themeToggleValue" class="kw">false</span><span class="punc">;</span>
+      </button>
+      <div class="tabbar__path">~/portfolio/home.tsx</div>
+    </div>
+
+    <div class="leaf">
+
+      <section class="hero">
+        <div>
+          <div class="code-line">
+<span class="kw">let</span> dev <span class="punc">=</span><br><span class="str">"Victor Urumov"</span><span class="punc">;</span>
+          </div>
+          <span class="comment">computer science student · builder · debugger</span>
+
+          <!-- Replace this paragraph with a short bio: your year, major, and the kind of problems you like solving. Two to three sentences is plenty. -->
+          <p class="hero__tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam.</p>
+
+          <div class="hero__actions">
+            <a href="projects.html" class="btn btn--solid">View my projects</a>
+            <a href="contact.html" class="btn btn--outline">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="filecard">
+          <div class="filecard__bar">
+            <span>headshot.png</span>
+            <span>400×400</span>
+          </div>
+          <!-- Swap this div for an <img src="..." alt="..."> of your own photo -->
+          <div class="filecard__photo">[ photo placeholder ]</div>
+        </div>
+      </section>
+
+      <section class="stat-row">
+        <div class="stat"><b>X.XX</b><span>GPA — CS Major</span></div>
+        <div class="stat"><b>N</b><span>Projects shipped</span></div>
+        <div class="stat"><b>N</b><span>Languages / frameworks</span></div>
+      </section>
+
+      <section class="blurb-grid">
+        <div>
+          <span class="comment">what I do</span>
+          <!-- Short paragraph on the kind of work you do / are studying -->
+          <h3>Section header</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div>
+          <span class="comment">what I'm looking for</span>
+          <!-- Short paragraph on internships / roles / collaborators you're seeking -->
+          <h3>Section header</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="leaf" style="padding-top:0;">
+      <div class="site-foot">
+        <span>© 2026 Victor Urumov</span>
+        <span>Built with HTML, CSS, &amp; JS</span>
+      </div>
+    </footer>
+  </main>
+
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>

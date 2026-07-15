@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Victor Urumov</title>
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var theme = stored || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <nav class="explorer">
+    <div class="explorer__user">
+      <div class="explorer__avatar">VU</div>
+      <span>Victor Urumov</span>
+    </div>
+    <div class="explorer__root">portfolio/</div>
+
+    <button class="explorer__toggle" aria-expanded="false" aria-controls="tree">Menu</button>
+
+    <ul class="tree" id="tree">
+      <li><a href="index.html"><span class="dot dot--home"></span>home.tsx</a></li>
+      <li><a href="projects.html" class="is-active"><span class="dot dot--projects"></span>projects/</a></li>
+      <li><a href="experience.html"><span class="dot dot--exp"></span>experience.md</a></li>
+      <li><a href="interests.html"><span class="dot dot--interests"></span>interests.yml</a></li>
+      <li><a href="contact.html"><span class="dot dot--contact"></span>contact.sh</a></li>
+    </ul>
+
+    <div class="explorer__foot">last commit: Jul 2026</div>
+  </nav>
+
+  <main class="page">
+
+    <div class="tabbar">
+      <div class="tabbar__dots"><span></span><span></span><span></span></div>
+      <div class="tabbar__file">projects/index.tsx</div>
+      <button class="theme-toggle" id="themeToggle" aria-pressed="false">
+        <span class="kw">let</span>&nbsp;darkMode&nbsp;<span class="punc">=</span>&nbsp;<span id="themeToggleValue" class="kw">false</span><span class="punc">;</span>
+      </button>
+      <div class="tabbar__path">~/portfolio/projects/</div>
+    </div>
+
+    <div class="leaf leaf--wide">
+
+      <div class="page-head">
+        <span class="comment">selected work</span>
+        <h1>Projects</h1>
+        <!-- This is the main event. Each card below has an image carousel, a one-line
+             summary, and a "view details" toggle that expands in place — no separate
+             page per project. Duplicate a whole <article class="project-card"> block
+             to add another one; duplicate a .carousel__slide to add another image. -->
+        <p class="projects-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- PROJECT CARD — duplicate this whole <article> to add another project -->
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><span>screenshot-1.png</span></div>
+                <div class="carousel__slide"><span>screenshot-2.png</span></div>
+                <div class="carousel__slide"><span>screenshot-3.png</span></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__status"><span class="status-dot status-dot--shipped"></span>shipped</div>
+            <h3 class="project-card__title">Project Title</h3>
+            <p class="project-card__desc">Lorem ipsum dolor sit amet, a one-line summary of what this project is and does.</p>
+            <ul class="project-card__tags">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+          <details>
+            <summary>View details</summary>
+            <div class="project-card__more">
+              <h5>The problem</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h5>What it does</h5>
+              <ul>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#">Repo →</a>
+                <a href="#">Live demo →</a>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><span>screenshot-1.png</span></div>
+                <div class="carousel__slide"><span>screenshot-2.png</span></div>
+                <div class="carousel__slide"><span>screenshot-3.png</span></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__status"><span class="status-dot status-dot--progress"></span>in progress</div>
+            <h3 class="project-card__title">Project Title</h3>
+            <p class="project-card__desc">Lorem ipsum dolor sit amet, a one-line summary of what this project is and does.</p>
+            <ul class="project-card__tags">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <details>
+            <summary>View details</summary>
+            <div class="project-card__more">
+              <h5>The problem</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <h5>What it does</h5>
+              <ul>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#">Repo →</a>
+                <a href="#">Write-up →</a>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><span>screenshot-1.png</span></div>
+                <div class="carousel__slide"><span>screenshot-2.png</span></div>
+                <div class="carousel__slide"><span>screenshot-3.png</span></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__status"><span class="status-dot status-dot--shipped"></span>shipped</div>
+            <h3 class="project-card__title">Project Title</h3>
+            <p class="project-card__desc">Lorem ipsum dolor sit amet, a one-line summary of what this project is and does.</p>
+            <ul class="project-card__tags">
+              <li>Java</li>
+              <li>Android</li>
+            </ul>
+          </div>
+          <details>
+            <summary>View details</summary>
+            <div class="project-card__more">
+              <h5>The problem</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <h5>What it does</h5>
+              <ul>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#">Repo →</a>
+                <a href="#">App listing →</a>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><span>screenshot-1.png</span></div>
+                <div class="carousel__slide"><span>screenshot-2.png</span></div>
+                <div class="carousel__slide"><span>screenshot-3.png</span></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__status"><span class="status-dot status-dot--archived"></span>coursework</div>
+            <h3 class="project-card__title">Project Title</h3>
+            <p class="project-card__desc">Lorem ipsum dolor sit amet, a one-line summary of what this project is and does.</p>
+            <ul class="project-card__tags">
+              <li>C++</li>
+              <li>Data Structures</li>
+            </ul>
+          </div>
+          <details>
+            <summary>View details</summary>
+            <div class="project-card__more">
+              <h5>The problem</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <h5>What it does</h5>
+              <ul>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse.</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#">Repo →</a>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><span>screenshot-1.png</span></div>
+                <div class="carousel__slide"><span>screenshot-2.png</span></div>
+                <div class="carousel__slide"><span>screenshot-3.png</span></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__status"><span class="status-dot status-dot--progress"></span>in progress</div>
+            <h3 class="project-card__title">Project Title</h3>
+            <p class="project-card__desc">Lorem ipsum dolor sit amet, a one-line summary of what this project is and does.</p>
+            <ul class="project-card__tags">
+              <li>Python</li>
+              <li>Machine Learning</li>
+            </ul>
+          </div>
+          <details>
+            <summary>View details</summary>
+            <div class="project-card__more">
+              <h5>The problem</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <h5>What it does</h5>
+              <ul>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#">Repo →</a>
+                <a href="#">Notebook →</a>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><span>screenshot-1.png</span></div>
+                <div class="carousel__slide"><span>screenshot-2.png</span></div>
+                <div class="carousel__slide"><span>screenshot-3.png</span></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__status"><span class="status-dot status-dot--shipped"></span>shipped</div>
+            <h3 class="project-card__title">This portfolio site</h3>
+            <p class="project-card__desc">Hand-coded from scratch in HTML, CSS and vanilla JS — no framework, no page builder.</p>
+            <ul class="project-card__tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <details>
+            <summary>View details</summary>
+            <div class="project-card__more">
+              <h5>The problem</h5>
+              <p>Needed a portfolio site for coursework that didn't look like a generic template, and that made project write-ups easy to scan without a page per project.</p>
+              <h5>What it does</h5>
+              <ul>
+                <li>Uses a native &lt;details&gt; element so project details expand in place, animated with the Web Animations API.</li>
+                <li>File-tree navigation styled after a code editor's sidebar, with a light/dark theme toggle.</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#">Repo →</a>
+              </div>
+            </div>
+          </details>
+        </article>
+
+      </div>
+
+    </div>
+
+    <footer class="leaf leaf--wide" style="padding-top:0;">
+      <div class="site-foot">
+        <span>© 2026 Victor Urumov</span>
+        <span>Built with HTML, CSS, &amp; JS</span>
+      </div>
+    </footer>
+  </main>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
