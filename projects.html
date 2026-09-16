@@ -39,7 +39,7 @@
       <li><a href="contact.html"><span class="dot dot--contact"></span>contact.sh</a></li>
     </ul>
 
-    <div class="explorer__foot">last commit: Jul 2026</div>
+    <div class="explorer__foot">last commit: Sep 2026</div>
   </nav>
 
   <main class="page">
@@ -62,16 +62,64 @@
              summary, and a "view details" toggle that expands in place — no separate
              page per project. Duplicate a whole <article class="project-card"> block
              to add another one; duplicate a .carousel__slide to add another image. -->
-        <p class="projects-intro">This is the part of the site that actually matters. Everything below is something I built, broke, and eventually got working — click into any card for the messier details: what the problem was, what I used, and what I'd do differently now.</p>
+        <p class="projects-intro">This is the part of the site that actually matters. Everything below is something I built, broke, and eventually got working — click into any card for the messier details and to find links to code or writeups.</p>
       </div>
 
       <div class="project-grid">
 
         <article class="project-card">
           <div class="project-card__thumb">
-            <div class="carousel carousel--single">
+            <div class="carousel">
               <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="Data Management for Data Science final project cover"></div>
+                <div class="carousel__slide"><img src="images/landingpage.png" alt="Portfolio site preview"></div>
+                <div class="carousel__slide"><img src="images/projectspage.png" alt="Portfolio project page preview"></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__status"><span class="status-dot status-dot--shipped"></span><span>shipped</span><span class="project-card__year">July 2026</span></div>
+            <h3 class="project-card__title">This portfolio site</h3>
+            <p class="project-card__desc">Hand-coded from scratch in HTML, CSS and vanilla JS — no framework, no page builder.</p>
+            <ul class="project-card__tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <details>
+            <summary>View details</summary>
+            <div class="project-card__more">
+              <h5>The problem</h5>
+              <p>Needed a portfolio site for coursework that didn't look like a generic template, and that made project write-ups easy to scan without a page per project.</p>
+              <h5>What it does</h5>
+              <ul>
+                <li>File-tree navigation styled after a code editor's sidebar, with a light/dark theme toggle.</li>
+              </ul>
+              <div class="project-card__links">
+                <a target="_blank" href="https://github.com/MrV1ctor/me">Repo →</a>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="images/datamgmttotal.png" alt="Data Management for Data Science final project cover"></div>
+                <div class="carousel__slide"><img src="images/schoolsdifficulty.png" alt="Data Management for Data Science final project cover"></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
               </div>
             </div>
           </div>
@@ -99,9 +147,16 @@
 
         <article class="project-card">
           <div class="project-card__thumb">
-            <div class="carousel carousel--single">
+            <div class="carousel">
               <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="Trading Journal preview"></div>
+                <div class="carousel__slide"><img src="images/tradejournal1.png" alt="Trading Journal preview"></div>
+                <div class="carousel__slide"><img src="images/tradejournal2.png" alt="Trading Journal preview"></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
               </div>
             </div>
           </div>
@@ -130,9 +185,18 @@
 
         <article class="project-card">
           <div class="project-card__thumb">
-            <div class="carousel carousel--single">
+            <div class="carousel ">
               <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="Lock In extension preview"></div>
+                <div class="carousel__slide"><img src="images/lockin1.png" alt="Lock In extension preview"></div>
+                <div class="carousel__slide"><img src="images/lockin2.png" alt="Lock In extension preview"></div>
+                <div class="carousel__slide"><img src="images/lockin3.png" alt="Lock In extension preview"></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
               </div>
             </div>
           </div>
@@ -150,9 +214,22 @@
 
         <article class="project-card">
           <div class="project-card__thumb">
-            <div class="carousel carousel--single">
+            <div class="carousel">
               <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="Statsense extension preview"></div>
+                <div class="carousel__slide"><img src="images/statsense1.png" alt="Statsense extension preview"></div>
+                <div class="carousel__slide"><img src="images/statsense2.png" alt="Statsense extension preview"></div>
+                <div class="carousel__slide"><img src="images/statsense3.png" alt="Statsense extension preview"></div>
+                <div class="carousel__slide"><img src="images/statsense4.png" alt="Statsense extension preview"></div>
+                <div class="carousel__slide"><img src="images/statsense5.png" alt="Statsense extension preview"></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 4"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 5"></button>
               </div>
             </div>
           </div>
@@ -184,9 +261,18 @@
 
         <article class="project-card">
           <div class="project-card__thumb">
-            <div class="carousel carousel--single">
+            <div class="carousel">
               <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="FRTree website preview"></div>
+                <div class="carousel__slide"><img src="images/frtree1.png" alt="FRTree website preview"></div>
+                <div class="carousel__slide"><img src="images/frtree2.png" alt="FRTree website preview"></div>
+                <div class="carousel__slide"><img src="images/frtree3.png" alt="FRTree website preview"></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
               </div>
             </div>
           </div>
@@ -204,9 +290,16 @@
 
         <article class="project-card">
           <div class="project-card__thumb">
-            <div class="carousel carousel--single">
+            <div class="carousel">
               <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="Ace-It website preview"></div>
+                <div class="carousel__slide"><img src="images/aceit1.png" alt="Ace-It website preview"></div>
+                <div class="carousel__slide"><img src="images/aceit2.png" alt="Ace-It website preview"></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
               </div>
             </div>
           </div>
@@ -232,65 +325,6 @@
           </details>
         </article>
 
-        <article class="project-card">
-          <div class="project-card__thumb">
-            <div class="carousel carousel--single">
-              <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="Space Invaders clone preview"></div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__status"><span class="status-dot status-dot--archived"></span><span>private</span><span class="project-card__year">September 2022</span></div>
-            <h3 class="project-card__title">Space Invaders</h3>
-            <p class="project-card__desc">A Java arcade clone with animated sprites, enemy movement patterns, sound, and fully breakable barriers.</p>
-            <ul class="project-card__tags">
-              <li>Java</li>
-              <li>Game Dev</li>
-              <li>Sprites</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__thumb">
-            <div class="carousel carousel--single">
-              <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="Picture Lab preview"></div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__status"><span class="status-dot status-dot--archived"></span><span>private</span><span class="project-card__year">December 2022</span></div>
-            <h3 class="project-card__title">Picture Lab</h3>
-            <p class="project-card__desc">A Java image-processing toolkit applying Sobel, glitch, cellify, emboss, and other procedural effects.</p>
-            <ul class="project-card__tags">
-              <li>Java</li>
-              <li>Image Processing</li>
-              <li>Filters</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__thumb">
-            <div class="carousel carousel--single">
-              <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="Cosmolith preview"></div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__status"><span class="status-dot status-dot--archived"></span><span>private</span><span class="project-card__year">April 2022</span></div>
-            <h3 class="project-card__title">Cosmolith</h3>
-            <p class="project-card__desc">An unfinished game project exploring infinite terrain generation, mining, inventory, health/stamina, and building systems.</p>
-            <ul class="project-card__tags">
-              <li>Java</li>
-              <li>Unity</li>
-              <li>Procedural Generation</li>
-            </ul>
-          </div>
-        </article>
 
         <!-- PROJECT CARD — duplicate this whole <article> to add another project -->
         <!-- <article class="project-card">
@@ -516,57 +550,26 @@
         </article> -->
 
 
+
+
         <article class="project-card">
           <div class="project-card__thumb">
             <div class="carousel">
               <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="Portfolio site preview"></div>
-                <div class="carousel__slide"><img src="images/projectspage.png" alt="Portfolio project page preview"></div>
+                <div class="carousel__slide"><img src="images/njco1.png" alt="New Jersey Chemistry Olympics website preview"></div>
+                <div class="carousel__slide"><img src="images/njco2.png" alt="New Jersey Chemistry Olympics website preview"></div>
+                <div class="carousel__slide"><img src="images/njco3.png" alt="New Jersey Chemistry Olympics website preview"></div>
+                <div class="carousel__slide"><img src="images/njco4.png" alt="New Jersey Chemistry Olympics website preview"></div>
+                <div class="carousel__slide"><img src="images/njco5.png" alt="New Jersey Chemistry Olympics website preview"></div>
               </div>
               <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
               <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
               <div class="carousel__dots">
                 <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
                 <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
-              </div>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__status"><span class="status-dot status-dot--shipped"></span><span>shipped</span><span class="project-card__year">July 2026</span></div>
-            <h3 class="project-card__title">This portfolio site</h3>
-            <p class="project-card__desc">Hand-coded from scratch in HTML, CSS and vanilla JS — no framework, no page builder.</p>
-            <ul class="project-card__tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-          <details>
-            <summary>View details</summary>
-            <div class="project-card__more">
-              <h5>The problem</h5>
-              <p>Needed a portfolio site for coursework that didn't look like a generic template, and that made project write-ups easy to scan without a page per project.</p>
-              <h5>What it does</h5>
-              <ul>
-                <li>File-tree navigation styled after a code editor's sidebar, with a light/dark theme toggle.</li>
-              </ul>
-              <div class="project-card__links">
-                <a target="_blank" href="https://github.com/MrV1ctor/me">Repo →</a>
-              </div>
-            </div>
-          </details>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__thumb">
-            <div class="carousel">
-              <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="New Jersey Chemistry Olympics website preview"></div>
-              </div>
-              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
-              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
-              <div class="carousel__dots">
-                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 4"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 5"></button>
               </div>
             </div>
           </div>
@@ -605,12 +608,16 @@
           <div class="project-card__thumb">
             <div class="carousel">
               <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="EnVRT project preview"></div>
+                <div class="carousel__slide"><img src="images/envrt3.png" alt="EnVRT project preview"></div>
+                <div class="carousel__slide"><img src="images/envrt2.png" alt="EnVRT project preview"></div>
+                <div class="carousel__slide"><img src="images/envrt1.png" alt="EnVRT project preview"></div>
               </div>
               <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
               <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
               <div class="carousel__dots">
                 <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
               </div>
             </div>
           </div>
@@ -649,50 +656,7 @@
           </details>
         </article>
 
-        <article class="project-card">
-          <div class="project-card__thumb">
-            <div class="carousel">
-              <div class="carousel__track">
-                <div class="carousel__slide"><img src="images/landingpage.png" alt="Reddit Scroller preview"></div>
-              </div>
-              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
-              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
-              <div class="carousel__dots">
-                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
-              </div>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__status"><span class="status-dot status-dot--shipped"></span><span>shipped</span><span class="project-card__year">May 2023</span></div>
-            <h3 class="project-card__title">Reddit Scroller Website</h3>
-            <p class="project-card__desc">An automated scroller with an infinite feed of random subreddits, designed as a lightweight browsing experiment.</p>
-            <ul class="project-card__tags">
-              <li>Reddit API</li>
-              <li>localStorage</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-          <details>
-            <summary>View details</summary>
-            <div class="project-card__more">
-              <h5>The problem</h5>
-              <p>There was a need for a small web app that could continuously surface random community content without the complexity of a full social media interface.</p>
-              <h5>What it does</h5>
-              <ul>
-                <li>Uses the Reddit API to pull a steady stream of randomized subreddit content.</li>
-                <li>Stores user preferences and state in localStorage to make the browsing session persistent.</li>
-                <li>Built as a lightweight front end using HTML, CSS, and JavaScript.</li>
-                <li>Infinite scroll, autoscroll, and saved posts.</li>
-              </ul>
-              <div class="project-card__links">
-                <a target="_blank" href="https://mrv1ctor.github.io/RedditScroller/">Website →</a>
-                <a target="_blank" href="https://github.com/MrV1ctor/RedditScroller">Code →</a>
-              </div>
-            </div>
-          </details>
-        </article>
+
 
         <article class="project-card">
           <div class="project-card__thumb">
@@ -868,6 +832,89 @@
             </ul>
           </div>
         </article>
+
+
+
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="images/piclab1.png" alt="Picture Lab preview"></div>
+                <div class="carousel__slide"><img src="images/piclab2.png" alt="Picture Lab preview"></div>
+                <div class="carousel__slide"><img src="images/piclab3.png" alt="Picture Lab preview"></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__status"><span class="status-dot status-dot--archived"></span><span>private</span><span class="project-card__year">December 2022</span></div>
+            <h3 class="project-card__title">Picture Lab</h3>
+            <p class="project-card__desc">A Java image-processing toolkit applying Sobel, glitch, cellify, emboss, and other procedural effects.</p>
+            <ul class="project-card__tags">
+              <li>Java</li>
+              <li>Image Processing</li>
+              <li>Filters</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- code is bugged so i cant get images, do later -->
+        <!-- <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="carousel carousel--single">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="images/landingpage.png" alt="Space Invaders clone preview"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__status"><span class="status-dot status-dot--archived"></span><span>private</span><span class="project-card__year">September 2022</span></div>
+            <h3 class="project-card__title">Space Invaders</h3>
+            <p class="project-card__desc">A Java arcade clone with animated sprites, enemy movement patterns, sound, and fully breakable barriers.</p>
+            <ul class="project-card__tags">
+              <li>Java</li>
+              <li>Game Dev</li>
+              <li>Sprites</li>
+            </ul>
+          </div>
+        </article> -->
+
+        <article class="project-card">
+          <div class="project-card__thumb">
+            <div class="carousel carousel--single">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="images/cosmolith2.png" alt="Cosmolith preview"></div>
+                <div class="carousel__slide"><img src="images/cosmolith1.png" alt="Cosmolith preview"></div>
+              </div>
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Previous image">‹</button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Next image">›</button>
+              <div class="carousel__dots">
+                <button type="button" class="carousel__dot is-active" aria-label="Slide 1"></button>
+                <button type="button" class="carousel__dot" aria-label="Slide 2"></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__status"><span class="status-dot status-dot--archived"></span><span>private</span><span class="project-card__year">April 2022</span></div>
+            <h3 class="project-card__title">Cosmolith</h3>
+            <p class="project-card__desc">An unfinished game project exploring infinite terrain generation, mining, inventory, health/stamina, and building systems.</p>
+            <ul class="project-card__tags">
+              <li>Java</li>
+              <li>Unity</li>
+              <li>Procedural Generation</li>
+            </ul>
+          </div>
+        </article>
+
+
+
 
         <article class="project-card">
           <div class="project-card__thumb">
