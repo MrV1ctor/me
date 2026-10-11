@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <style>
+    /* Default style (Light Mode) targets the paths inside the group */
+    .icon-shape path { 
+      stroke: #1e293b !important; 
+      stroke-width: 2px;
+    }
+
+    /* Overrides for Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      .icon-shape path { 
+        stroke: #ffffff !important; 
+      }
+    }
+  </style>
+  <g class="icon-shape" transform="scale(0.75) translate(4, 4)">
+    <path d="m18 16 4-4-4-4"/>
+    <path d="m6 8-4 4 4 4"/>
+    <path d="m14.5 4-5 16"/>
+  </g>
+</svg>
